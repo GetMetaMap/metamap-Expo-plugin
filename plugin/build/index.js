@@ -8,7 +8,7 @@ const config_plugins_1 = require("@expo/config-plugins");
 const path_1 = __importDefault(require("path"));
 const fs_1 = __importDefault(require("fs"));
 const constants_1 = require("./constants");
-const pkg = require('react-native-metamap-sdk/package.json');
+const pkg = require('react-native-expo-metamap-sdk/package.json');
 const CAMERA_USAGE = 'Allow $(PRODUCT_NAME) to access your camera';
 const MICROPHONE_USAGE = 'Allow $(PRODUCT_NAME) to access your microphone';
 async function readFileAsync(path) {
@@ -31,7 +31,7 @@ function addLines(content, find, offset, toAdd) {
 // Because we need the package to be added AFTER the React and Google maven packages, we create a new allprojects.
 // It's ok to have multiple allprojects.repositories, so we create a new one since it's cheaper than tokenizing
 // the existing block to find the correct place to insert our camera maven.
-const gradleMaven = 'allprojects { repositories { maven { url "$rootDir/../node_modules/react-native-metaMap-sdk/android/maven" } } }';
+const gradleMaven = 'allprojects { repositories { maven { url "$rootDir/../node_modules/react-native-expo-metamap-sdk/android/maven" } } }';
 const withAndroidCameraGradle = (config) => {
     return (0, config_plugins_1.withProjectBuildGradle)(config, (config) => {
         if (config.modResults.language === 'groovy') {
@@ -44,7 +44,7 @@ const withAndroidCameraGradle = (config) => {
     });
 };
 function setGradleMaven(buildGradle) {
-    if (buildGradle.includes('react-native-metaMap-sdk/android/maven')) {
+    if (buildGradle.includes('react-native-expo-metamap-sdk/android/maven')) {
         return buildGradle;
     }
     return buildGradle + `\n${gradleMaven}\n`;
