@@ -2,7 +2,7 @@
 
 | LTS version (Recommended for most users): | Current Version(Latest features) |
 |-------------------------------------------|----------------------------------|
-| 2.1.3                                     | 2.1.3                            |
+| 2.2.0                                     | 2.2.0                            |
 
 ## Install MetaMap for React Native Expo
 In a terminal, use the following command to install MetaMap for React Native:
@@ -154,6 +154,12 @@ metadata: {"identityId": "value"}
 ### Set encryption Configuration Id as parameter for encrypting data.
 ```bash
 metaData: ["encryptionConfigurationId": "value"]
+   ```
+
+### Set customization fonts as parameter.
+to add custom fonts, the project needs to have these font files, otherwise SDK will use default fonts: 
+```bash
+metadata: ["regularFont": "REGULAR_FONT_NAME.ttf", "boldFont":  "BOLD_FONT_NAME.ttf"]
    ```
 
 ## Some error codes you may get during integration
