@@ -1,8 +1,8 @@
 {
   "name": "react-native-expo-metamap-sdk",
   "title": "React Native MetaMap Id Sdk",
-  "version": "2.2.5",
-  "description": "Mati React Native Plugin",
+  "version": "2.3.4",
+  "description": "MetaMap React Native Plugin",
   "main": "index.js",
   "scripts": {
     "test": "expo-module test",
@@ -28,6 +28,9 @@
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
   "dependencies": {
+    "expo": "^51.0.0",
+    "react": "18.2.0",
+    "react-native": "0.74.1",
     "react-scripts": "^5.0.1"
   },
   "devDependencies": {
