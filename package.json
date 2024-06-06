@@ -1,7 +1,7 @@
 {
   "name": "react-native-expo-metamap-sdk",
   "title": "React Native MetaMap Id Sdk",
-  "version": "2.3.4",
+  "version": "2.3.5",
   "description": "MetaMap React Native Plugin",
   "main": "index.js",
   "scripts": {
