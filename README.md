@@ -58,9 +58,9 @@ export default class App extends Component {
   handleMetaMapClickButton = () => {
 
 	 //set 3 params clientId (cant be null), flowId, metadata
-  	  var yourMetadata = { param1: "value1", param2: "value2" }
+  	  var metadata = { param1: "value1", param2: "value2" }
 
-   	 MetaMapRNSdk.showFlow("YOUR_CLIENT_ID", "YOUR_FLOW_ID", yourMetadata);
+   	 MetaMapRNSdk.showFlow("YOUR_CLIENT_ID", "YOUR_FLOW_ID", metadata);
   }
 
   //Add button to view graph
