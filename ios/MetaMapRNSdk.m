@@ -11,8 +11,8 @@ RCT_EXPORT_METHOD(showFlow:(NSString * _Nonnull)clientId flowId:(NSString * _Nul
 {
     dispatch_async(dispatch_get_main_queue(), ^(void){
         NSMutableDictionary *mutableDictionary = [metadata mutableCopy];     //Make the dictionary mutable to change/add
-        mutableDictionary[@"sdkType"] = @"react-native-expo-ios";
-        [MetaMap.shared showMetaMapFlowWithClientId: clientId flowId: flowId configurationId: nil encryptionConfigurationId: nil metadata: metadata];
+        mutableDictionary[@"sdkType"] = @"react-native-ios";
+       [MetaMap.shared showMetaMapFlowWithClientId: clientId flowId: flowId configurationId: nil encryptionConfigurationId: nil metadata: metadata];
         [MetaMapButtonResult shared].delegate = self;
         self->hasListeners = YES;
     });
@@ -22,7 +22,7 @@ RCT_EXPORT_METHOD(showFlowWithConfigurationId:(NSString * _Nonnull)clientId flow
 {
     dispatch_async(dispatch_get_main_queue(), ^(void){
         NSMutableDictionary *mutableDictionary = [metadata mutableCopy];     //Make the dictionary mutable to change/add
-        mutableDictionary[@"sdkType"] = @"react-native-expo-ios";
+        mutableDictionary[@"sdkType"] = @"expo-ios";
         [MetaMap.shared showMetaMapFlowWithClientId: clientId flowId: flowId configurationId: configurationId encryptionConfigurationId: encryptionConfigurationId metadata: metadata];
         [MetaMapButtonResult shared].delegate = self;
         self->hasListeners = YES;

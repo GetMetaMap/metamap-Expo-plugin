@@ -1,15 +1,13 @@
 {
   "name": "react-native-expo-metamap-sdk",
-  "title": "React Native MetaMap Id Sdk",
-  "version": "2.6.0",
+  "title": "React Native MetaMap Sdk",
+  "version": "2.6.7",
   "description": "MetaMap React Native Plugin",
   "main": "index.js",
   "scripts": {
     "test": "expo-module test",
     "build": "expo-module build",
     "clean": "expo-module clean",
-    "prepare-module": "npx expo-module prepare",
-    "prepublishOnly": "expo-module prepublishOnly",
     "expo-module": "expo-module"
   },
   "repository": {
@@ -28,13 +26,12 @@
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
   "dependencies": {
-    "react": "18.2.0",
-    "react-native": "0.74.2",
-    "react-scripts": "^3.0.1"
+    "expo": "^52.0.35",
+    "react": "18.3.1",
+    "react-native": "0.76.7",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.14",
-    "expo": "^52.0.25",
-    "expo-module-scripts": "^3.5.2"
+    "expo-module-scripts": "^2.1.1"
   }
 }
