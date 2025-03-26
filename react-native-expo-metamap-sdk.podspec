@@ -20,5 +20,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency "React"
-  s.dependency 'MetaMapSDK', '3.22.5'
+  s.dependency 'MetaMapSDK', '3.22.7'
 end
