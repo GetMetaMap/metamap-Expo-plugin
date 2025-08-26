@@ -1,7 +1,7 @@
 {
   "name": "react-native-expo-metamap-sdk",
   "title": "React Native MetaMap Sdk",
-  "version": "2.7.6",
+  "version": "2.7.7",
   "description": "MetaMap React Native Plugin",
   "main": "index.js",
   "scripts": {
@@ -16,22 +16,32 @@
     "baseUrl": "https://github.com/GetMetaMap/mati-reactnative-plugin/tree/Expo"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "expo",
+    "metamap"
   ],
   "author": {
     "name": "Avo Sukiasyan",
-    "email": "avetik.sukiasyan@metamap.com"
+    "email": "avetik.sukiasyan@Incode.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
-  "dependencies": {
-    "expo": "^52.0.35",
-    "react": "18.3.1",
-    "react-native": "0.76.7",
-    "react-scripts": "^5.0.1"
+  "peerDependencies": {
+    "expo": "^52 || ^51 || ^50",
+    "react": ">=18.2.0",
+    "react-native": ">=0.73"
   },
   "devDependencies": {
-    "expo-module-scripts": "^2.1.1"
+    "expo": "^52.0.35",
+    "expo-module-scripts": "^2.1.1",
+    "react": "18.3.1",
+    "react-native": "0.76.7"
+  },
+  "overrides": {
+    "nth-check": "^2.0.1",
+    "postcss": "^8.4.31",
+    "serialize-javascript": "^6.0.2",
+    "webpack-dev-server": "^5.2.1"
   }
 }
